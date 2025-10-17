@@ -114,8 +114,6 @@ def mainMenu():
     return clock,appleNum,mode
 
 def shareHighScore(mode,score):
-    import random as r
-def shareHighScore(mode,score):
     alphabet = ['w', 'g', 'b', 'o', 'p', 'j', 'q', 'd', 'e', 'z', 'n', 's', 'h', 'v', 'k', 'r', 'c', 'y', 'f', 'x', '+', 't', 'l', 'm', 'u', 'a', 'i']    
     code = ''
     a = 1
@@ -209,4 +207,5 @@ def startGame(clockMax,maxApple,mode):
 clock, appleNum,mode = mainMenu()
 while True:
     cs.clear_screen()
+
     startGame(clock,appleNum,mode)
