@@ -56,7 +56,7 @@ class Snake():
         for x in range(slice[0]+1,slice[0]+self.side-1):
             cs.set_pixel(x,slice[1]+1,colour)
             cs.set_pixel(x,slice[1]+self.side-1,colour)
-        for y in range(slice[1]+1,slice[1]+self.side-1):
+        for y in range(slice[1]+1,slice[1]+self.side):
             cs.set_pixel(slice[0]+1,y,colour)
             cs.set_pixel(slice[0]+self.side-1,y,colour)
     def appleCollide(self, apple):
@@ -209,3 +209,4 @@ while True:
     cs.clear_screen()
 
     startGame(clock,appleNum,mode)
+
